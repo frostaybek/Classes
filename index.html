@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function func(){
+            alert('Şaka yaptım, şubende bulunan ders programına bakabilirsin. Telaşlanma! tüm sınıflara gelecek.');
+        }
+    </script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Karla:wght@300&family=Poppins:wght@200&display=swap');
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    user-select: none;
+    }
+
+    body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #870000, #190A05);
+    }
+
+    .body-h1{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 32px;
+    color: yellowgreen;
+    user-select: text;
+    }
+
+    .links{
+    text-decoration: none;
+    font-size: 26px;
+    transition: all ease 0.4s;
+    margin-bottom: 16px;
+    border-left: 6px solid black;
+    padding: 0px 12px;
+    }
+
+    .links:hover{
+    color: orange;
+    }
+
+    .links:active{
+    color: orangered;
+    }
+
+    .main{
+    display: grid;
+    }
+
+    .footer{
+    background-color: black;
+    width: 100%;
+    display: block;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    }
+
+    .foot-p{
+    user-select: text;
+    }
+
+    .foot-link{
+    color: rgb(179, 255, 0);
+    text-decoration: none;
+    font-size: 18px;
+    transition: all ease 0.4s;
+    }
+
+    .foot-link:hover{
+    color: rgb(240, 73, 12);
+    }
+
+    .btn{
+    width: 120px;
+    border: 3px solid black;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 18px;
+    background-color: rgb(189, 30, 62);
+    text-align: center;
+    border-radius: 25px;
+    transition: all ease 0.4s;
+    }
+
+    .btn:hover{
+    background-color: rgb(114, 20, 39);
+    }
+
+    .btn:active{
+    background-color: rgb(68, 9, 21);
+    }
+    </style>
+    <title>Sınıf Seç</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="body-h1" onclick="func()">Sınıf Seç Bakayım:</h1>
+        <a href="http://frostaybek.rf.gd/11b" class="links">11-B</a>
+        <a href="#" class="links">11-F [Yapımda]</a>
+        <a href="http://frostaybek.rf.gd" class="btn">
+            Geri Dön
+        </a>
+    </div>
+    <footer class="footer">
+        <p class="foot-p">
+            <a href="http://frostaybek.rf.gd/about" class="foot-link">Ayaz Aybek</a>
+            tarafından yapılmıştır &copy; 2022
+        </p>
+    </footer>
+</body>
+</html>
